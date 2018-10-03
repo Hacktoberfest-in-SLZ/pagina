@@ -195,6 +195,10 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="js/map.js"></script>
+  <script>
+    const baseURL = location.protocol + "//" + location.hostname + (location.port && ":" + location.port) + location.pathname
+    document.write('<base href="'+ baseURL + '">')
+  </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9PNm0kk5CpBf0qzhbV0ZaPlDcHpk1hAc&callback=initMap">
   </script>
